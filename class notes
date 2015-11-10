@@ -1,0 +1,52 @@
+Notes:
+
+Box - Sizing:
+
+Content-box
+button 122
+
+border-box
+button 100
+
+button {
+width:100px;
+padding:10px;
+border: 1px solid black
+}
+
+* {
+box-sizing: border-box;
+}
+
+Position: fixed --> width is determined by content
+or
+absolute --> unlocks top, right, bottom, left, z-index
+
+overlay:
+section {
+position:fixed;
+top:0;
+bottom:0;
+right:0;
+left:0;
+}
+
+Tables:
+<table>
+Each row - <tr>
+Each column - <td>
+</table>
+
+cells go within rows, everything goes within a <table> tag
+Optional:
+  <thead> - header row
+  <th> - like TD but for a header
+
+<td colspan="2">  if you want to merge cells
+
+CSS Classes:
+Re-use CSS rules without the need for an element
+Rule--> named
+Custom adjective
+
+Use a dot "." to select 

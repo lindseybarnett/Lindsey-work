@@ -184,3 +184,36 @@ parenthesis - declares a variable - argument - variable without the VAR
 
 Do the work:
 CaclF2C(52) -- 52 becomes F inside the body of the function
+
+Dom (html tree (page)) Manipulations
+1 - creating element
+2 - get an element (parent,container)
+3 - set text content
+4 - change attributes
+5 - change css classes
+6 - append child to parent
+
+ToDo/Index.html
+(4 lines of JS code)
+Empty state (initial)
+Page loads
+all HTML Rendered
+HTML
+  Head
+  body
+    input
+    button
+    ul (2 GET)(empty - container for new <li>s)(1-create+3 set text content+6)--><li>stuff</li>
+
+Element
+  textContent - <p>foo</p> foo is the textContent - always a string
+  appendChild () - adds one element to another (as a child)
+
+Document (The whole page- the DOM)
+  GET is querySelector () - find an element by CSS selector
+  CREATE is createElement - create a new element not on the page yet
+
+
+String
+  "hello".length -->5
+  you can ask questions about a string

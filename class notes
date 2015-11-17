@@ -49,4 +49,116 @@ Re-use CSS rules without the need for an element
 Rule--> named
 Custom adjective
 
-Use a dot "." to select 
+Use a dot "." to select
+
+Relative : on its own to fine tune position
+position-fixed: you dont care who the parents are - it is just relative to the browser
+the order in which we define the classes does not matter
+
+classes are more specific than just a tag
+
+CSS Library
+HTML + CSS + JS
+Buttons
+Naviations
+Headers
+Reset (body {margin:0})
+Grids
+  Layout
+  responsiveness
+cross-browser
+
+Less - preprocessor (SCSS)
+.less -->
+variables for things like colors
+functions: lighten (red,10%), mix (red,blue, 50%), nesting, separate codes into different files (no download penalty)
+
+Javascript:
+
+x=y+1
+x=2+3
+
+Variables:
+  -store a value
+  - value may change
+  - named value
+
+Numbers, strings, arrays, names, address, css class, ANYTHING
+
+VAR x = 1; (lines end w/semicolon - aka period at the end of the sentence, end of statement)
+x = variable name
+  ex. number - primitive = lowest level type of thing
+  ex. string - primitive  --- string has quotes!
+    VAR A = "xyz"
+    VAR FNAME = "avand" ( like a periodic table element - you cant break them up further)
+  ex. boolean - primitive -- true or false
+    VAR LIGHTSON = TRUE;
+    Cannot DO: VAR TRUE = 1; because "true" is a special taken keyword
+      1, A, True = object literals
+  VAR TODAY = "2015/11/11" -- string
+  VAR TOMORROW (theoretical) = D 2015-11-11; 5:30pm
+
+  = is called OPERATOR (+,-,*,/,%)
+    means "set" or "save"
+    + addition for numbers VAR X = 1+1
+    VAR Y = "A"+"B" --> Y becomes "AB" -- called concatenation for strings
+
+Reserved Words:
+  True - object literal for false
+  VAR- declare variables
+  Function - declare function
+  Alert
+  Return
+
+
+JS VAR NAME Rules
+ - cant use a keyword
+ - cant start with a number
+ - no special characters * / + = @ " ' ($ is good)
+
+ JS VAR Convention
+ Camel case
+ firstName - theFirstLady
+
+ You only need to use VAR the first time you declare a variable
+ JS is case sensitive
+ JS runs - top to border-bottom
+ Optional arguments (many) --> into function --> optional - the return (only one)
+
+ Variables -- are like our nouns
+ Functions -- are like our verbs
+  all about doing stuff
+  must be called to actually do the work
+  3 Functions:
+    Prompt - 1 argument Returns User Input OR null OR blank string
+    Alert - 1 argument (string) Returns Undefined
+    Parse Int
+
+    Arguments - no need for var
+
+11/16
+
+Event Handling - responding to user action or sometimes just browser action
+"when x Do why"
+
+<p class="comment">set text context</p>
+
+Dom (html tree (page)) Manipulations
+ - creating element
+ - setting text contect
+ - changing attributes
+ - changing css classes
+ - appending children to parents (where in the dom)
+
+Arrays + Loops
+N-times do something
+lists of data
+Loops - N-#
+  "as many columns as"
+
+Conditionals:
+"If this then do"
+
+Homework:
+Dom -- element -- value
+element is a generic thing = input is a specific type of element

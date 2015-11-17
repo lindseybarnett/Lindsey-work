@@ -1,15 +1,15 @@
 
 <script type="text/javascript">
-  var firstName = "lindsey";
-  var lastName = "barnett";
-  var fullName = firstName + " " + lastName;
-
-  var x= 20;
-  var y = 100;
-  var sum = x+y;
-  var difference = x-y;
-  var product = x*y;
-  var quotient= x/y;
+  // var firstName = "lindsey";
+  // var lastName = "barnett";
+  // var fullName = firstName + " " + lastName;
+  //
+  // var x= 20;
+  // var y = 100;
+  // var sum = x+y;
+  // var difference = x-y;
+  // var product = x*y;
+  // var quotient= x/y;
 
   // firstName = prompt("what is your first name?");
   // lastName = prompt ("what is your last name?");
@@ -20,17 +20,26 @@
   // var quarter=.25*half;
   // var mile=half + quarter;
 
-function convertLbstoMins(lbs) {
-  var lbs=216;
-  var temp=375;
-  var stuffed=true;
-  var mins=lbs + temp;
-
-  return mins;
+function calcTurkeyCookTime(lbs, stuffed) {
+if (stuffed){
+  return (lbs * 28)+ 108;
+  } else {
+  return (lbs * 19) + 124;
+}
 }
 
-var num = prompt ("kilometers");
-convertKilometerstoMiles(num);
+function calcPoundstoDollars(pounds) {
+ return(pounds * 1.52)
+}
+
+function calcDollarstoPounds(dollars) {
+ return(dollars * .66)
+}
+
+
+
+// var num = prompt ("kilometers");
+// convertKilometerstoMiles(num);
 
 
 </script>

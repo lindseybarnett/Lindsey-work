@@ -162,3 +162,25 @@ Conditionals:
 Homework:
 Dom -- element -- value
 element is a generic thing = input is a specific type of element
+
+Functions: doing/verbs
+- do one thing, which is what its called
+
+Function = Arguments "meat" (can have multiple, one, or none)-> Body (JS code)--> return value "sausage" (only 1 or undefined)
+
+Function Definition:
+Function makeSausage(meat){
+VAR sausage="casing"+meat+"casing";
+Return sausage
+}
+
+Function (JS keywords) + Name of Function (arbitrary but should tell you what it does) (){};
+
+ex. Function CalcFtoC (F){ Return (F-32)*5/9};
+
+Curly braces are required - where the function begins and ends "walls of the factory" - where you do something to F - using the value that was passed in
+parenthesis - declares a variable - argument - variable without the VAR
+"return"- tells the function to stop
+
+Do the work:
+CaclF2C(52) -- 52 becomes F inside the body of the function

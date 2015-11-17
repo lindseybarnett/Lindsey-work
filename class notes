@@ -216,3 +216,26 @@ Document (The whole page- the DOM)
 String
   "hello".length -->5
   you can ask questions about a string
+
+document.querySelector(string:el you want)
+document.createElement(string "header""p""li")
+querySelector & createElement are METHODS
+
+element SetTextContent
+EL.textContent
+  var b = document.querySelector("button")
+  b.textContent="Go away"
+  Response: button changed to "Go away"
+  object - collection of properties and behavior - methods - functions
+  textContent is just a property of the element
+
+  ul.appendChild (childelement<li>)
+
+  add a button:
+  var b = document.createElement("button")
+b.textContent = "hello there!"
+  "hello there!"
+var parent = document.querySelector ("header")
+undefined
+parent.appendChild(b)
+  <button>​hello there!​</button>​

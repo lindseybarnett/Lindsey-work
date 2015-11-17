@@ -1,0 +1,28 @@
+<ul>
+</ul>
+
+<script>
+function createListItem (textContent){
+//***** very important*****
+// create a new <li>
+var b = document.createElement("li")
+//set its textContent to whatever you want
+b.textContent = "whats up"
+//Get the <ul>
+var parent = document.querySelector ("ul")
+//append the new <li> to the <ul>
+parent.appendChild(b)
+}
+
+creatListItem();
+creatListItem("whatever I want")
+creatListItem("something else")
+</script>
+
+<!-- var b = document.createElement("li")
+b.textContent = "whats up"
+var parent = document.querySelector ("ul")
+  // undefined
+parent
+parent.appendChild(b)
+  // <button>​hello there!​</button>​ -->

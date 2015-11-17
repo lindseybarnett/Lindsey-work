@@ -206,13 +206,12 @@ HTML
     ul (2 GET)(empty - container for new <li>s)(1-create+3 set text content+6)--><li>stuff</li>
 
 Element
-  textContent - <p>foo</p> foo is the textContent - always a string
-  appendChild () - adds one element to another (as a child)
+  textContent() - <p>foo</p> foo is the textContent - always a string
+  appendChild() - adds one element to another (as a child)
 
 Document (The whole page- the DOM)
-  GET is querySelector () - find an element by CSS selector
-  CREATE is createElement - create a new element not on the page yet
-
+  GET is querySelector() - find an element by CSS selector
+  CREATE is createElement() - create a new element not on the page yet
 
 String
   "hello".length -->5

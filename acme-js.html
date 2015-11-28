@@ -7,8 +7,7 @@
   </head>
   <body>
     <!-- JS will create all the elements -->
-  </body>
-</html>
+
 
 <script>
 // Create the header
@@ -16,22 +15,68 @@ var body = document.querySelector("body");
 var header = document.createElement("header");
 body.appendChild(header);
 
+// Create the logo
+var logo = document.createElement("img");
+header.appendChild(logo);
+logo.setAttribute("src","http://f.cl.ly/items/05361u3R0D3i1c2y2203/acme-corp.jpg");
+logo.setAttribute("alt","ACME Corp Logo");
+logo.setAttribute("height","55px");
+
 // Create the nav
 var nav = document.createElement("nav");
 header.appendChild(nav);
 
-// Create the logo
-var li = document.createElement("li")
-header.appendChild(li);
+//create uls
+var links = document.createElement("ul");
+nav.appendChild(links);
 
-// Create the sign up button
-var button = document.createElement("button");
-button.textContent = "Sign up";
-nav.appendChild(header);
 
 //Create the products link
-var a = document.createElement("a");
-a.textContent = "Products";
-nav.appendChild(a);
+var products = document.createElement("li");
+links.appendChild(products);
+var prodlink = document.createElement("a");
+products.appendChild(prodlink);
+prodlink.textContent = "Products";
+
+// Create the sign up button
+ var signup = document.createElement("li");
+ links.appendChild(signup);
+ var signupbutton = document.createElement("button");
+ signupbutton.textContent = "Sign up";
+ signup.appendChild(signupbutton);
+
+
+// //get text to one
+// var body = document.querySelector("body")
+// var section = document.createElement("section")
+// body.appendChild(section);
+
+//create main
+var maintext = document.createElement("main");
+body.appendChild(maintext);
+var textsection = document.createElement("section");
+maintext.appendChild(textsection);
+
+//header text
+var h1 = document.createElement("h1");
+textsection.appendChild(h1);
+h1.textContent = "Welcome to ACME Corp!";
+
+//paragraph text
+var paragraph = document.createElement("p");
+textsection.appendChild(paragraph);
+paragraph.textContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+var paragraphtwo = document.createElement("p");
+textsection.appendChild(paragraphtwo);
+paragraphtwo.textContent="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";;
+
+//footer
+var foot = document.createElement("footer");
+body.appendChild(foot);
+var copyright = document.createElement("p");
+foot.appendChild(copyright);
+copyright.textContent = "Copyright, 2015";
 
 </script>
+</body>
+</html>

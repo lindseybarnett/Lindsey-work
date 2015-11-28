@@ -6,11 +6,12 @@ function createListItem (textContent){
 //***** very important*****
 // create a new <li>
 var b = document.createElement("li")
-//set its textContent to whatever you want
+//set its textContent to whatever you want - . stands for ' New List Item's Text Content
 b.textContent = "whats up"
 //Get the <ul>
 var parent = document.querySelector ("ul")
-//append the new <li> to the <ul>
+//append the new <li> to the <ul> - shows because the UL is on the DOM and not hidden
+// call parent list's append child method and pass in new list item as an arguement
 parent.appendChild(b)
 }
 

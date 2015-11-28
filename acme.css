@@ -1,0 +1,32 @@
+img {
+  width: 30%;
+}
+body {
+  max-width: 700px;
+  font-family: 'Lucida Grande',Verdana,sans-serif;
+  background:url("http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png");
+}
+  h1{
+    text-align:left;
+    font-size: 24px;
+  }
+  p {
+    text-align:left;
+    max-width:600px;
+  }
+  ul {
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  section {
+    width: 650px;
+    height: 250px;
+    border: 2px solid grey;
+    border-radius: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    background:white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+  }

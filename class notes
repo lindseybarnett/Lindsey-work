@@ -220,6 +220,7 @@ String
 document.querySelector(string:el you want)
 document.createElement(string "header""p""li")
 querySelector & createElement are METHODS
+document is an OBJECT - DOM/HTML
 
 element SetTextContent
 EL.textContent
@@ -239,3 +240,43 @@ var parent = document.querySelector ("header")
 undefined
 parent.appendChild(b)
   <button>​hello there!​</button>​
+
+querySelector returns the first element that matches the css selector - something a document can do
+"li" -- string and Quotes=object literal
+
+Methods on Strings:
+length
+toLowerCase()
+toUpperCase()
+split()
+
+var s = "avand";
+var sl = s.toLowerCase();
+
+Methods on Numbers:
+toString()
+
+
+var n = 1;
+var s = n.toString();
+
+1 querry selector for the body - then everything else is append child and text content
+1. create el - "A" or "button"
+2. set text Content "products" "sign up"
+3. append child "1st li" "second li"
+
+
+tagName, Text, parent --> makeElementWithTextContent
+
+Functions are a way of genericizing functionality
+
+function makeElement (tagName,text,parent){
+  var NewElement = document.createElement("tagName")
+  newElement.textContent = "text"
+  var parentElement = document.querySelector ("parent")
+  parentElement.appendChild(newElement)
+}
+
+call function (outside the function!!!):
+makeElementWithTextContent("Li","finish homework","ul")
+makeElement("A","products","Header Li:first-child")

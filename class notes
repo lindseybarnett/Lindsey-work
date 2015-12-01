@@ -280,3 +280,43 @@ function makeElement (tagName,text,parent){
 call function (outside the function!!!):
 makeElementWithTextContent("Li","finish homework","ul")
 makeElement("A","products","Header Li:first-child")
+
+11/30/15
+
+Forms:
+- accept user input
+<input type = "search"
+="text", email, password, checkbock,
+radio
+- focus state : when cursor is in the input
+<label>
+  name:
+  <input type:"text";
+</>
+---- clicking "name" focuses the input
+
+value : text inside the input NOT text content
+
+With Javascript:
+1. Get the El
+    var input = document.querySelector ("#NAME")
+      css selector
+    var s = input.value;
+
+    input.value="david"; -->changes the value to david
+
+
+    <input type = "submit" value ="save">
+    <button type="submit">Save</button>
+
+    Select html:
+
+    <select>
+      <option> select one</option>
+      <option> select two</option>
+    </select>
+
+Form Tags:
+<form>
+1. tells the browser where to send the data
+2. 

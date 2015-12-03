@@ -319,4 +319,44 @@ With Javascript:
 Form Tags:
 <form>
 1. tells the browser where to send the data
-2. 
+2. Serves to capture the "subit" (click + enter)
+
+Variables:
+  -store a value
+  - value may change
+  - named value
+you wouldnt have any functions - everything would be hardcoded
+variables are nouns
+
+Functions:
+Function = Name, Arguments (optional), Body (JS code), return value (optional)
+no variable outputs, you cant jump around - just runs top to bottom
+verbs
+
+DOM:
+document object model - the whole page
+document
+Dom (html tree (page)) Manipulations
+1 - creating element
+2 - get an element (parent,container)
+3 - set text content
+4 - change attributes
+5 - change css classes
+6 - append child to parent
+
+Event handlers
+= 1 argument : the even the occured
+= function thats called in response to an event
+= do dont ever call it
+
+- element : appendChild
+- document: querySelector
+- string: toUpperCase
+- event : target (which element fired the event), shift, control, timestamp, preventDefault
+        - always 1 argument, always called "event"
+    - event object gets passed into the like function
+
+How to listen to an event:
+1. Get the element you want to listen to(querySelector)
+2 add the event listener (addEventListener)
+3. write the event handler (function)

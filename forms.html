@@ -2,42 +2,50 @@
  <head>
    <meta charset="utf-8">
    <title>Forms</title>
+   <style>
+   .container {
+     display:block;
+   }
+   .container input{
+     width: 50px
+   }
+   </style>
  </head>
  <body>
  <div class="container">
    <div class="form-row">
 <label>
-      Name: <input type="text" id="Name">
-   </label>
+      <span>First Name: <input type="text" id="Name">
+   </label></span>
    </div>
  <div class="form-row">
-   <label>
+   <span><label>
      Email: <input type="email" id="Email">
-   </label>
+   </label></span>
    </div>
 <div class="form-row">
-   <label>
+<span><label>
      Phone: <input type="text" id="Phone">
-   </label>
+   </label></span>
    </div>
  <div class="form-row">
-   <label>
+   <span><label>
      Job: <select>
           <option> Select one... </option>
            <option> Designer </option>
            <option> Engineer </option>
            <option> Other </other>
            </select>
-   </label>
+   </label></span>
    </div>
  <div class="form-row">
-   <label>
+   <span><label>
      <input type="checkbox"> Agree to terms
-   </label>
+   </label></span>
 <div class="form-row">
-   <label>
+   <span><label>
      <input type="submit">
-   </label>
+   </label></span>
  </div>
  </body>
 </html>

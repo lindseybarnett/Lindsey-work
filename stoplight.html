@@ -14,6 +14,16 @@
       margin-top:10px;
     }
 
+    .circle {
+          height: 140px;
+          width: 140px;
+          margin: 20px auto 0px auto;
+          background-color: rgba(0, 0, 0, 0.6);
+          border-radius: 50%;
+          border: 2px solid rgba(0, 0, 0, 1);
+          box-shadow: 0px -8px rgba(0, 0, 0, 1);
+        }
+
       .light {
       background-color:rgb(255,179,0);
       width:300px;
@@ -23,26 +33,21 @@
       padding-bottom: 40px;
       }
 
-      .stop-light {
-      width: 120px;
-      height: 120px;
-      background-color: gray;
-      transition: background 800ms;
+      .stop {
+      width: 140px;
+      height: 140px;
+      background-color: red;
       border-radius: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:auto;
       border-top: 6px solid black;
       border-left: 4px solid black;
       border-bottom: 1px solid black;
       border-right:1px solid black;
       }
 
-      .slow-light {
-        width: 120px;
-        height: 120px;
-        background-color: gray;
-        transition: background 800ms;
+      .slow {
+        width: 140px;
+        height: 140px;
+        background-color: yellow;
         border-radius: 100px;
         margin-left: auto;
         margin-right: auto;
@@ -52,11 +57,10 @@
         border-bottom: 1px solid black;
         border-right:1px solid black;
       }
-      .go-light {
-        width: 120px;
-        height: 120px;
-        background-color: gray;
-        transition: background 800ms;
+      .go {
+        width: 140px;
+        height: 140px;
+        background-color: green;
         border-radius: 100px;
         margin-left: auto;
         margin-right: auto;
@@ -65,21 +69,6 @@
         border-left: 4px solid black;
         border-bottom: 1px solid black;
         border-right:1px solid black;
-      }
-
-      .shadow{
-            transition: box-shadow 100ms;
-          }
-
-      .red{
-      background-color: red;
-      }
-
-      .yellow{
-      background-color: yellow;
-      }
-      .green{
-      background-color: green;
       }
       </style>
 
@@ -90,69 +79,77 @@
   </head>
   <body>
     <header>
-        <button type="button" id="stop">Stop</button>
-        <button type="button" id="slow">Slow</button>
-        <button type="button" id="go">Go</button>
-        <button type="button" id="caution">Caution</button>
+        <button type="button" class="stopBtn">Stop</button>
+        <button type="button" class="slowBtn">Slow</button>
+        <button type="button" class="goBtn">Go</button>
+        <button type="button" class="cautionBtn">Caution</button>
     </header>
     <main>
         <div class="light">
-        <div class="stop-light shadow"></div>
-        <div class="slow-light shadow"></div>
-        <div class="go-light shadow"></div>
-        </div>
+
+  <div class="circle">
+    <div class="stopChild">
+
+    </div>
+  </div>
+  <div class="circle">
+    <div class="slowChild">
+
+    </div>
+  </div>
+  <div class="circle">
+    <div class="goChild">
+    </div>
+  </div>
+</div>
 </main>
 <script>
-var stopButton = document.querySelector(".stop");
-var slowButton = document.querySelector(".slow");
-var goButton = document.querySelector(".go");
-var cautionButton = document.querySelector(".caution");
+var stopClick = document.querySelector(".stopBtn");
+var slowClick = document.querySelector(".slowBtn");
+var goClick = document.querySelector(".goBtn");
+var cautionClick = document.querySelector(".cautionBtn");
 
+stopClick.addEventListener("click", turnRed);
+slowClick.addEventListener("click", turnYellow);
+goClick.addEventListener("click", turnGreen);
+cautionClick.addEventListener("click", turnCaution);
 
-
-stopButton.addEventListener("click", stop);
-slowButton.addEventListener("click", slow);
-goButton.addEventListener("click", go);
-cautionButton.addEventListener("click", caution);
-
-
-
-function stop(event) {
+function turnRed(event) {
   event.preventDefault();
-  var redLight=document.querySelector(".stop-light");
-  redLight.classList.add("red");
-  var yellowLight=document.querySelector(".slow-light")
-  yellowLight.classList.remove("yellow");
-  var greenLight=document.querySelector(".go-light")
-  greenLight.classList.remove("green")
+  var redLight=document.querySelector(".stopChild");
+  redLight.classList.add("stop");
+  var yellowLight=document.querySelector(".slowChild");
+  yellowLight.classList.remove("slow");
+  var greenLight=document.querySelector(".goChild");
+  greenLight.classList.remove("go");
   }
 
-  function slow(event) {
+  function turnYellow(event) {
     event.preventDefault();
-    var yellowLight=document.querySelector(".slow-light");
-    redLight.classList.add("yellow");
-    var redLight=document.querySelector(".stop-light")
-    redLight.classList.remove("red");
-    var greenLight=document.querySelector(".go-light")
-    greenLight.classList.remove("green")
+    var yellowLight=document.querySelector(".slowChild");
+    yellowLight.classList.add("slow");
+    var redLight=document.querySelector(".stopChild");
+    redLight.classList.remove("stop");
+    var greenLight=document.querySelector(".goChild");
+    greenLight.classList.remove("go");
     }
 
-    function go(event) {
+    function turnGreen(event) {
       event.preventDefault();
-      var greenLight=document.querySelector(".go-light")
-      greenLight.classList.add("green")
-      var redLight=document.querySelector(".stop-light");
-      redLight.classList.add("red");
-      var yellowLight=document.querySelector(".slow-light")
-      yellowLight.classList.remove("yellow");
+      var greenLight=document.querySelector(".goChild");
+      greenLight.classList.add("go");
+      var redLight=document.querySelector(".stopChild");
+      redLight.classList.remove("stop");
+      var yellowLight=document.querySelector(".slowChild");
+      yellowLight.classList.remove("slow");
       }
 
-      function caution(event){
+      function turnCaution(event){
         event.preventDefault();
         setInterval(toggleYellow,1000);
         function toggleYellow(){
-          var yellowLight = document.querySelector(".slow-light");
-          yellowLight.classlist.toggle("yellow")
+          var yellowLight = document.querySelector(".slowChild");
+          yellowLight.classList.toggle("slow");
         }
       }
 

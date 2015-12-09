@@ -120,31 +120,31 @@ cautionButton.addEventListener("click", caution);
 function stop(event) {
   event.preventDefault();
   var redLight=document.querySelector(".stop-light");
-  redLight.classList.add(".red");
-  var yellowLight=document.querySelector("slow-light")
-  yellowLight.classList.remove(".yellow");
-  var greenLight=document.querySelector("go-light")
-  greenLight.classList.remove(".green")
+  redLight.classList.add("red");
+  var yellowLight=document.querySelector(".slow-light")
+  yellowLight.classList.remove("yellow");
+  var greenLight=document.querySelector(".go-light")
+  greenLight.classList.remove("green")
   }
 
   function slow(event) {
     event.preventDefault();
     var yellowLight=document.querySelector(".slow-light");
-    redLight.classList.add(".yellow");
-    var redLight=document.querySelector("stop-light")
-    redLight.classList.remove(".red");
-    var greenLight=document.querySelector("go-light")
-    greenLight.classList.remove(".green")
+    redLight.classList.add("yellow");
+    var redLight=document.querySelector(".stop-light")
+    redLight.classList.remove("red");
+    var greenLight=document.querySelector(".go-light")
+    greenLight.classList.remove("green")
     }
 
     function go(event) {
       event.preventDefault();
-      var greenLight=document.querySelector("go-light")
-      greenLight.classList.add(".green")
+      var greenLight=document.querySelector(".go-light")
+      greenLight.classList.add("green")
       var redLight=document.querySelector(".stop-light");
-      redLight.classList.add(".red");
-      var yellowLight=document.querySelector("slow-light")
-      yellowLight.classList.remove(".yellow");
+      redLight.classList.add("red");
+      var yellowLight=document.querySelector(".slow-light")
+      yellowLight.classList.remove("yellow");
       }
 
       function caution(event){
@@ -152,7 +152,7 @@ function stop(event) {
         setInterval(toggleYellow,1000);
         function toggleYellow(){
           var yellowLight = document.querySelector(".slow-light");
-          yellowLight.classlist.toggle(".yellow")
+          yellowLight.classlist.toggle("yellow")
         }
       }
 

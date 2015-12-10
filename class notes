@@ -468,3 +468,79 @@ var keys=document.querySelectorAll(".key")
 for (var i=8, i<keys.lenth; i++){
   keys[i].addEventListener("click",playnote);
 }
+
+12/9
+Arrays Review:
+- collection of items
+- preserve their order
+- items are indexed by a number -> 0,1,2,3
+
+Declaring an Array:
+var a=[];    //declare an empty array
+var a1=[1,2,3];   //array of nums
+var a2=["a","b","c"];     //array of strings
+
+var B=[123,"ABC",true,[]];
+B.length //gives you the length -->4
+index: 0,1,2,3
+
+Get the first element out of array:
+var first=B[0]
+
+Objects: collection of properties and behavior (functions, methods)
+Array Methods:
+  - Length
+  - pop()
+  - push()
+
+  var A=["A","B","C"]
+  A[0]="A"
+  A[1]="B"
+  A[2]="C"
+
+  alert(A[0]);
+  alert(A[1]);
+  alert(A[2]);
+
+  0,1,2 == index : starts at 0, does the work, increments, check that index isn't out of bounds
+
+  var i=0;
+  if (i<a.length){
+    alert(a[i]);
+  }
+i=i+1;
+
+for (var i=0;i<A.lenth; i++){
+  alert(A[i])
+}                  //this will only run 3 times
+
+  var keys=document.querySelectorAll(".key")
+
+  for (var i=8, i<keys.lenth; i++){
+    keys[i].addEventListener("click",playnote);
+  }
+
+
+CONDITIONALS:
+- comparing 2 things
+    - equality A==B
+    - greater than A>B
+    - less than A<B
+    - greater than or equal to A>=B
+    - less than or equal to A<=B
+    - not equal A!=B
+- result in a boolean
+- when to use:
+   - for loop: the break condition (i<a.length)
+   - if statements
+
+IF STATEMENTS
+   IF (__Conditional_Statement__){
+
+   }
+
+   IF (A>B){
+
+   } else {
+
+   }

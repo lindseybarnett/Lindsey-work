@@ -1,4 +1,3 @@
-
 <main>
   <form id="new-todo-item-form">
     <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
@@ -23,32 +22,51 @@ var form = document.querySelector("#new-todo-item-form");
 var input = document.querySelector("#new-todo-item-input");
 var list = document.querySelector("#todo-list");
 
-form.addEventListener("submit", addTodo);
 
-function addTodo(event) {
-  event.preventDefault();
 
-  var array= document.querySelector("#new-todo-item-input").value.split(",");
-   for (var i = 0; i < array.length; i++) {
-     console.log(array[i]);
+  form.addEventListener("submit", addTodo);
 
-  var li = document.createElement("li");
-  var label = document.createElement("label");
-  var checkbox = document.createElement("input");
-  var span = document.createElement("span");
+  function addTodo(event) {
+    event.preventDefault();
 
-  checkbox.setAttribute("type", "checkbox");
-  span.textContent = array[i];
+    var li = document.createElement("li");
+    var label = document.createElement("label");
+    var checkbox = document.createElement("input");
+    var span = document.createElement("span");
 
-  label.appendChild(checkbox);
-  label.appendChild(span);
-  li.appendChild(label);
-  list.appendChild(li)
+    checkbox.setAttribute("type", "checkbox");
+    span.textContent = input.value;
+
+    label.appendChild(checkbox);
+    label.appendChild(span);
+    li.appendChild(label);
+    list.appendChild(li);
+
+
+  var notes = document.querySelector("#new-todo-item-input");
+  var list=new Array();
+  list=notes.split(", ");
+  // for (var i = 0; i < notes.length; i++) {
+  //   console.log(notes[i]);
+  //   var ul=document.querySelector("#todo-list");
+  //   var li=document.createElement("li");
+  //   li.textcontent=notes[i];
+  //   ul.apendChild(li);}
+
+// var li=document.querySelector("todo-list");
+// li.textContent= notes.value.split;
 }
-}
+  // }
+
+
+//   function createItem(todo)
+// event.preventDefault()
+
+
+
+
 
 </script>
-
 
 <style>
   * { box-sizing: border-box; }

@@ -544,3 +544,93 @@ IF STATEMENTS
    } else {
 
    }
+
+12/14
+
+Object Oriented Programming:
+Element:
+  - setAttribute
+  - appendChild
+  - textContent
+  - value
+
+Document:
+  - createElement
+  - querySelector
+String
+  - split
+  - length
+
+Objects: collection of properties and functions
+
+Object Inheritance:
+string:
+  - toUpperCase
+  - length
+object:
+  - toString
+case insensitive string: inherits all properties and behavior of the parent
+  - compare
+
+Create object with properties:
+
+var car = {
+  numWheels:4,
+  color: "red"
+};
+alert(car.color);
+car.color="green";
+
+car.engine={
+  size: "1500cc",
+  cylinders: 4,
+  horses: 200,
+  hybrid:false
+}
+
+car.engine.hybrid=true;
+
+or car["engine"]["hybrid"]=true
+brackets instead when dealing with 3rd party data
+
+GETTING THE TITLE OF THE FIRST MOVIE:
+
+var results= {
+}
+results.Search[0].Title
+For (var i=0; i< results["Search"].length,i++){
+results["Search"][i];
+}
+
+
+$.get(url, resultsReceived)
+
+resultsReceived -- the function
+
+search for the locations and put them on a map
+"forms over data" - "find me" button that puts it on a map
+
+chat is basically the same as the to do list - you just save the data
+
+What does Javascript help us to:
+  1. Dom manupulation:
+    - new content
+    - changing content
+  2. Request data from a data source (API)
+
+movie:
+  create movie list items:
+  link
+  li
+  div
+  span
+
+  http://omdbapi.com/?s=matric
+  - jquery: $.get("...", fn)
+  submin the form
+  get the value of the input
+
+createMovie (name,url,year)
+resultsReceived(results) - an object with a key called "search" - which has an array
+for (var i=0; i<results["search"];i++){}
+formSubmitted(event)

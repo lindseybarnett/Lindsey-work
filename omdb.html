@@ -1,0 +1,35 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+
+$.get("http://omdbapi.com/?s=matrix", resultsReceived);
+
+function resultsReceived(results) {
+  console.log("the data from omdb is:", results);
+
+  for (var i = 0; i < results["Search"].length; i++) {
+    // var movie= results["Search"][i])
+    console.log(i, results["Search"][i]["Title"]);
+
+var ul= document.querySelector("#movies");
+var li= document.createElement("li")
+var movieDiv = document.createElement("div");
+var link = document.createElement("a");
+var movieYear = document.createElement("div")
+
+li.classList.add("movie");
+movieDiv.classList.add("movie-title");
+movieYear.classlList.add("movie-release-date");
+link.setAttribute("href","http://imdb.com/title/"+reults["search"][i]["imdbID"]);
+link.textContent= reults["Search"][i]["Title"];
+movieYear.textContent = results["Search"][i]["Year"];
+
+ul.appendChild(li);
+li.appendChild(movieDiv);
+movieDiv.appendChild(link);
+lik.appendChild(movieYear);
+
+  }
+}
+
+</script>

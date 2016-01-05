@@ -20,14 +20,14 @@ var movieYear = document.createElement("div")
 li.classList.add("movie");
 movieDiv.classList.add("movie-title");
 movieYear.classlList.add("movie-release-date");
-link.setAttribute("href","http://imdb.com/title/"+results["search"][i]["imdbID"]);
-link.textContent= results["Search"][i]["Title"];
+link.setAttribute("href","http://imdb.com/title/"+reults["search"][i]["imdbID"]);
+link.textContent= reults["Search"][i]["Title"];
 movieYear.textContent = results["Search"][i]["Year"];
 
 ul.appendChild(li);
 li.appendChild(movieDiv);
 movieDiv.appendChild(link);
-link.appendChild(movieYear);
+lik.appendChild(movieYear);
 
   }
 }

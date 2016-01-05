@@ -634,3 +634,15 @@ createMovie (name,url,year)
 resultsReceived(results) - an object with a key called "search" - which has an array
 for (var i=0; i<results["search"];i++){}
 formSubmitted(event)
+
+Var A= document.querySelector("A")
+createElement -- document.createElement("li") -- $("<li>") need carrots to tell jquery to CREATE
+QueryExisting -- document.querySelector("ul") -- $("ul")
+Get text -- var T = li.textContent; -- var T=$li.text()
+                                    -- $li.text("....") -- same FN Dif Arguments -- riff results (overloading)
+set attr - A.setAttribute("href","....") ---- $A.attr("href","...")
+get attr - var href = A.getAttribute("href"); ----- var href = $A.attr("href")
+adding class -- li.classList.add("movie-item") --- $li.addClass("movie-item")
+appending -- li.appendChild(A) -- $li.append($A) or $A.appendTo($li);
+
+add event listener -- a.addEventListener("click", FN) -- $A.on("click".fn)

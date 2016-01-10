@@ -11,11 +11,6 @@ body {
   float: left;
   border-radius:25px;
   display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
 }
 iframe {
   border: 0;
@@ -26,45 +21,85 @@ iframe {
 
 }
 
-@-webkit-keyframes pulse {
-  25% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
+.popup
+{
+    position:absolute;
+    top:0px;
+    left:200px;
+    margin:100px auto;
+    width:500px;
+    height:500px;
+    font-family:verdana;
+    font-size:13px;
+    padding:10px;
+    background-color:rgb(240,240,240);
+    border:2px solid grey;
+    z-index:100000000000000000;
+    display:none
 }
 
-@keyframes pulse {
-  25% {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-}
-
-
-.frame-container:hover {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+.cancel
+{
+    display:relative;
+    cursor:pointer;
+    margin:0;
+    float:right;
+    height:10px;
+    width:14px;
+    padding:0 0 5px 0;
+    background-color:black;
+    text-align:center;
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:100000000000000000;
 }
 
 </style>
 
-<div class="frame-container"><iframe src="http://i.imgur.com/GenRRK9.jpg"></iframe></div>
-<div class="frame-container"><iframe src="http://i.imgur.com/xvfN0ud.jpg"></iframe></div>
-<div class="frame-container"><iframe src="http://i.imgur.com/T7FdF96.jpg"></iframe></div>
-<div class="frame-container"><iframe src="http://i.imgur.com/s8D4GKJ.jpg"></iframe></div>
+<head>
+
+  <button onClick="openPopup();"><div class="frame-container"><iframe src="http://i.imgur.com/GenRRK9.jpg"></iframe></div></button>
+  <div id="overlay" class="popup">
+      This is a test message
+      <div class="cancel" onclick="closePopup();"></div>
+  </div>
+
+  <button onClick="openPopup();"><div class="frame-container"><iframe src="http://i.imgur.com/xvfN0ud.jpg"></iframe></div></button>
+  <div id="overlay" class="popup">
+      This is a test message
+      <div class="cancel" onclick="closePopup();"></div>
+  </div>
+
+  <button onClick="openPopup();"><div class="frame-container"><iframe src="http://i.imgur.com/T7FdF96.jpg"></iframe></div></button>
+  <div id="overlay" class="popup">
+      This is a test message
+      <div class="cancel" onclick="closePopup();"></div>
+  </div>
+
+  <button onClick="openPopup();"><div class="frame-container"><iframe src="http://i.imgur.com/s8D4GKJ.jpg"></iframe></div></button>
+  <div id="overlay" class="popup">
+      This is a test message
+      <div class="cancel" onclick="closePopup();"></div>
+  </div>
+
+  <button onClick="openPopup();"><div class="frame-container"><iframe src="http://i.imgur.com/hwjC8yo.jpg"></iframe></div></button>
+  <div id="overlay" class="popup">
+      This is a test message
+      <div class="cancel" onclick="closePopup();"></div>
+  </div>
+
+</head>
+
+<script>
+
+function openPopup() {
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+</script>

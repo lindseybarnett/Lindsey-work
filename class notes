@@ -646,3 +646,14 @@ adding class -- li.classList.add("movie-item") --- $li.addClass("movie-item")
 appending -- li.appendChild(A) -- $li.append($A) or $A.appendTo($li);
 
 add event listener -- a.addEventListener("click", FN) -- $A.on("click".fn)
+
+OAuth  - security/auth
+API Access:
+ - free/open
+ - key/un/pw : would still be public
+ - OAtuth (login popup - "do you allow __ to use __") - redirect to provider. Access token gives your app temp access to your customers data
+
+
+ *** Map Box
+
+ do a tutorial and get a basic map on a page

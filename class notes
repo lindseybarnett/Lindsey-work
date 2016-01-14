@@ -657,3 +657,30 @@ API Access:
  *** Map Box
 
  do a tutorial and get a basic map on a page
+
+ properties of an animation:
+ - name
+ - easing function
+ - duration
+ - keyframes (states you care about)
+ - Fill Mode
+ - Direction
+
+ keyframes:
+
+ @keyframes move {
+  from {
+    }
+  to {
+
+  }
+ }
+
+Animation property:
+.box{
+animation-name: move;
+animation-duration: 200ms;
+}
+
+
+close & map html

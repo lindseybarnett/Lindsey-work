@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<button id="bounce">Bounce</button>
+
+<div id="circle"></div>
+
+<style>
+#circle{
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: red;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.bouncing {
+  animation: bouncing 300ms infinite alternate;
+}
+
+@keyframes bouncing {
+  from { transform: translateY(0) scaleY(0.9); }
+  to   { transform: translateY(-100px) scaleY(1); }
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+$("#bounce").on("click", function() {
+  $("#circle").toggleClass("bouncing");
+})
+
+$("#scale").on("click", function() {
+  $("#circle").toggleClass("scale");
+})
+</script>

@@ -19,12 +19,346 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGluZHNleXJiYXJuZXR0IiwiYSI6ImNpajNzMTd2MjAwM
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v8',
-    center: [-122.4, 37.7],
-    zoom: 9,
+    center: [-122.419287, 37.756634],
+    zoom: 15,
     // causes pan & zoom handlers not to be applied, similar to
     // .dragging.disable() and other handler .disable() funtions in Leaflet.
-    interactive: false
+    interactive: true,
+
 });
+
+map.on('style.load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-122.419287, 37.756634]
+                },
+                "properties": {
+                    "title": "Lindsey",
+                    "marker-symbol": "harbor"
+                }
+            }]
+        }
+    });
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        },
+        "paint": {
+            "text-size": 12
+        }
+    });
+    });
+
+
+    map.on('style.load', function () {
+        map.addSource("markers", {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-122.419287, 37.756634]
+                    },
+                    "properties": {
+                        "title": "Lindsey",
+                        "marker-symbol": "harbor"
+                    }
+                }]
+            }
+        });
+
+        map.addLayer({
+            "id": "markers",
+            "type": "symbol",
+            "source": "markers",
+            "layout": {
+                "icon-image": "{marker-symbol}-15",
+                "text-field": "{title}",
+                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                "text-offset": [0, 0.6],
+                "text-anchor": "top"
+            },
+            "paint": {
+                "text-size": 12
+            }
+        });
+        });
+
+
+        map.on('style.load', function () {
+            map.addSource("markers", {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-122.419287, 37.756634]
+                        },
+                        "properties": {
+                            "title": "Lindsey",
+                            "marker-symbol": "harbor"
+                        }
+                    }]
+                }
+            });
+
+            map.addLayer({
+                "id": "markers",
+                "type": "symbol",
+                "source": "markers",
+                "layout": {
+                    "icon-image": "{marker-symbol}-15",
+                    "text-field": "{title}",
+                    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                    "text-offset": [0, 0.6],
+                    "text-anchor": "top"
+                },
+                "paint": {
+                    "text-size": 12
+                }
+            });
+            });
+
+
+            map.on('style.load', function () {
+                map.addSource("markers", {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [-122.419287, 37.756634]
+                            },
+                            "properties": {
+                                "title": "Lindsey",
+                                "marker-symbol": "harbor"
+                            }
+                        }]
+                    }
+                });
+
+                map.addLayer({
+                    "id": "markers",
+                    "type": "symbol",
+                    "source": "markers",
+                    "layout": {
+                        "icon-image": "{marker-symbol}-15",
+                        "text-field": "{title}",
+                        "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                        "text-offset": [0, 0.6],
+                        "text-anchor": "top"
+                    },
+                    "paint": {
+                        "text-size": 12
+                    }
+                });
+                });
+
+
+                map.on('style.load', function () {
+                    map.addSource("markers", {
+                        "type": "geojson",
+                        "data": {
+                            "type": "FeatureCollection",
+                            "features": [{
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [-122.419287, 37.756634]
+                                },
+                                "properties": {
+                                    "title": "Lindsey",
+                                    "marker-symbol": "harbor"
+                                }
+                            }]
+                        }
+                    });
+
+                    map.addLayer({
+                        "id": "markers",
+                        "type": "symbol",
+                        "source": "markers",
+                        "layout": {
+                            "icon-image": "{marker-symbol}-15",
+                            "text-field": "{title}",
+                            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                            "text-offset": [0, 0.6],
+                            "text-anchor": "top"
+                        },
+                        "paint": {
+                            "text-size": 12
+                        }
+                    });
+                    });
+
+
+                    map.on('style.load', function () {
+                        map.addSource("markers", {
+                            "type": "geojson",
+                            "data": {
+                                "type": "FeatureCollection",
+                                "features": [{
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [-122.419287, 37.756634]
+                                    },
+                                    "properties": {
+                                        "title": "Lindsey",
+                                        "marker-symbol": "harbor"
+                                    }
+                                }]
+                            }
+                        });
+
+                        map.addLayer({
+                            "id": "markers",
+                            "type": "symbol",
+                            "source": "markers",
+                            "layout": {
+                                "icon-image": "{marker-symbol}-15",
+                                "text-field": "{title}",
+                                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                                "text-offset": [0, 0.6],
+                                "text-anchor": "top"
+                            },
+                            "paint": {
+                                "text-size": 12
+                            }
+                        });
+                        });
+
+
+                        map.on('style.load', function () {
+                            map.addSource("markers", {
+                                "type": "geojson",
+                                "data": {
+                                    "type": "FeatureCollection",
+                                    "features": [{
+                                        "type": "Feature",
+                                        "geometry": {
+                                            "type": "Point",
+                                            "coordinates": [-122.419287, 37.756634]
+                                        },
+                                        "properties": {
+                                            "title": "Lindsey",
+                                            "marker-symbol": "harbor"
+                                        }
+                                    }]
+                                }
+                            });
+
+                            map.addLayer({
+                                "id": "markers",
+                                "type": "symbol",
+                                "source": "markers",
+                                "layout": {
+                                    "icon-image": "{marker-symbol}-15",
+                                    "text-field": "{title}",
+                                    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                                    "text-offset": [0, 0.6],
+                                    "text-anchor": "top"
+                                },
+                                "paint": {
+                                    "text-size": 12
+                                }
+                            });
+                            });
+
+
+                            map.on('style.load', function () {
+                                map.addSource("markers", {
+                                    "type": "geojson",
+                                    "data": {
+                                        "type": "FeatureCollection",
+                                        "features": [{
+                                            "type": "Feature",
+                                            "geometry": {
+                                                "type": "Point",
+                                                "coordinates": [-122.419287, 37.756634]
+                                            },
+                                            "properties": {
+                                                "title": "Lindsey",
+                                                "marker-symbol": "harbor"
+                                            }
+                                        }]
+                                    }
+                                });
+
+                                map.addLayer({
+                                    "id": "markers",
+                                    "type": "symbol",
+                                    "source": "markers",
+                                    "layout": {
+                                        "icon-image": "{marker-symbol}-15",
+                                        "text-field": "{title}",
+                                        "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                                        "text-offset": [0, 0.6],
+                                        "text-anchor": "top"
+                                    },
+                                    "paint": {
+                                        "text-size": 12
+                                    }
+                                });
+                                });
+
+
+                                map.on('style.load', function () {
+                                    map.addSource("markers", {
+                                        "type": "geojson",
+                                        "data": {
+                                            "type": "FeatureCollection",
+                                            "features": [{
+                                                "type": "Feature",
+                                                "geometry": {
+                                                    "type": "Point",
+                                                    "coordinates": [-122.419287, 37.756634]
+                                                },
+                                                "properties": {
+                                                    "title": "Lindsey",
+                                                    "marker-symbol": "harbor"
+                                                }
+                                            }]
+                                        }
+                                    });
+
+                                    map.addLayer({
+                                        "id": "markers",
+                                        "type": "symbol",
+                                        "source": "markers",
+                                        "layout": {
+                                            "icon-image": "{marker-symbol}-15",
+                                            "text-field": "{title}",
+                                            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                                            "text-offset": [0, 0.6],
+                                            "text-anchor": "top"
+                                        },
+                                        "paint": {
+                                            "text-size": 12
+                                        }
+                                    });
+                                    });
+
 </script>
 
 </body>

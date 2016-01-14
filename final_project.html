@@ -40,11 +40,12 @@ iframe {
     height:500px;
     font-family:verdana;
     font-size:13px;
-    padding:10px;
+    padding:25px;
     background-color:rgb(240,240,240);
     border:2px solid grey;
     z-index:100000000000000000;
-    display:none
+    display:none;
+
 }
 
 .cancel
@@ -80,97 +81,144 @@ iframe {
           <iframe src="http://i.imgur.com/GenRRK9.jpg"></iframe>
         </div></button>
 
-            <div id="overlay" class="popup">
+            <div id="eltecho" class="popup">
           El Techo
                 <div class="cancel" onclick="closePopup();"></div>
             </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup1();">
         <div class="frame-container">
           <iframe src="http://i.imgur.com/xvfN0ud.jpg"></iframe>
         </div></button>
 
-            <div id="overlay" class="popup">
+            <div id="dirtyhabit" class="popup">
           Dirty Habit
-                <div class="cancel" onclick="closePopup();"></div>
+                <div class="cancel" onclick="closePopup1();"></div>
             </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup2();">
         <div class="frame-container">
           <iframe src="http://i.imgur.com/T7FdF96.jpg"></iframe>
         </div></button>
 
-            <div id="overlay" class="popup">
+            <div id="620jones" class="popup">
           620 Jones
-                <div class="cancel" onclick="closePopup();"></div>
+                <div class="cancel" onclick="closePopup2();"></div>
             </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup3();">
         <div class="frame-container">
           <iframe src="http://i.imgur.com/s8D4GKJ.jpg"></iframe>
         </div></button>
 
-            <div id="overlay" class="popup">
+            <div id="bluestem" class="popup">
           Bluestem Brasserie
-                <div class="cancel" onclick="closePopup();"></div>
+                <div class="cancel" onclick="closePopup3();"></div>
             </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup4();">
         <div class="frame-container">
           <iframe src="http://i.imgur.com/hwjC8yo.jpg"></iframe>
         </div></button>
 
-            <div id="overlay" class="popup">
+            <div id="calacademy" class="popup">
           California Academy of Science
-                <div class="cancel" onclick="closePopup();"></div>
+                <div class="cancel" onclick="closePopup4();"></div>
             </div>
 
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup5();">
           <div class="frame-container">
             <iframe src="http://i.imgur.com/wDjpmlB.jpg"></iframe>
           </div></button>
 
-              <div id="overlay" class="popup">
+              <div id="brestaurant" class="popup">
             B Restaurant & Bar
-                  <div class="cancel" onclick="closePopup();"></div>
+                  <div class="cancel" onclick="closePopup5();"></div>
               </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup6();">
           <div class="frame-container">
             <iframe src="http://i.imgur.com/HQlLLth.jpg"></iframe>
           </div></button>
 
-              <div id="overlay" class="popup">
+              <div id="topofthemark" class="popup">
             Top of the Mark
-                  <div class="cancel" onclick="closePopup();"></div>
+                  <div class="cancel" onclick="closePopup6();"></div>
               </div>
 
-      <button onClick="openPopup();">
+      <button onClick="openPopup7();">
           <div class="frame-container">
             <iframe src="http://i.imgur.com/cndyhoh.jpg"></iframe>
           </div></button>
 
-              <div id="overlay" class="popup">
+              <div id="theview" class="popup">
                 The View
-                  <div class="cancel" onclick="closePopup();"></div>
+                  <div class="cancel" onclick="closePopup7();"></div>
               </div>
 
 
 </head>
 
 
-<body>
     <script>
 
         function openPopup() {
-            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('eltecho').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('eltecho').style.display = 'none';
         }
 
-        function closePopup() {
-            document.getElementById('overlay').style.display = 'none';
+        function openPopup1() {
+            document.getElementById('dirtyhabit').style.display = 'block';
+        }
+        function closePopup1() {
+            document.getElementById('dirtyhabit').style.display = 'none';
+        }
+
+        function openPopup2() {
+            document.getElementById('620jones').style.display = 'block';
+        }
+        function closePopup2() {
+            document.getElementById('620jones').style.display = 'none';
+        }
+
+        function openPopup3() {
+            document.getElementById('bluestem').style.display = 'block';
+        }
+        function closePopup3() {
+            document.getElementById('bluestem').style.display = 'none';
+        }
+
+        function openPopup4() {
+            document.getElementById('calacademy').style.display = 'block';
+        }
+        function closePopup4() {
+            document.getElementById('calacademy').style.display = 'none';
+        }
+
+        function openPopup5() {
+            document.getElementById('brestaurant').style.display = 'block';
+        }
+        function closePopup5() {
+            document.getElementById('brestaurant').style.display = 'none';
+        }
+
+        function openPopup6() {
+            document.getElementById('topofthemark').style.display = 'block';
+        }
+        function closePopup6() {
+            document.getElementById('topofthemark').style.display = 'none';
+        }
+
+        function openPopup7() {
+            document.getElementById('theview').style.display = 'block';
+        }
+        function closePopup7() {
+            document.getElementById('theview').style.display = 'none';
         }
 
     </script>
-</body>
+
 </html>

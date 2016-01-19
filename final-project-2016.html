@@ -12,6 +12,9 @@ h1{
   font-size:20px;
   text-align: center;
   padding:30px;
+  display:block;
+  width: 100%;
+  margin: 0px auto;
 
 }
 
@@ -23,11 +26,10 @@ h2{
 }
 
 body {
-  position: absolute;
-  right: 0px;
-  width: 1000px;
-  padding: 10px;
-
+  display:block;
+    width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .roof-top-thumb {
@@ -44,10 +46,10 @@ body {
           transition: all .5s ease;
 }
 
-.roof-top-thumb:hover {
-  width: 300px;
-  height: 300px;
-}
+/*.roof-top-thumb:hover {
+  width: 280px;
+  height: 280px;
+}*/
 
 
 .roof-top-popup
@@ -86,6 +88,7 @@ body {
     color:white;
     border-radius:3px;
     z-index:100000000000000000;
+
 }
 
 .hidden {
@@ -132,15 +135,18 @@ body {
   height: 100px;
 }
 
+footer {
+  display:center;
+}
 
 </style>
   </head>
   <body>
-<h1>
-  <div class="header">
-    Rooftop Bars in San Francisco
-  </div> <br>
-</h1>
+      <h1>
+        <div class="header">
+          Rooftop Bars in San Francisco
+        </div> <br>
+      </h1>
 
 
 <div id="eltecho" class="roof-top" data-lat="-122.419287" data-lng="37.756634">
@@ -270,7 +276,7 @@ This 39th story bar atop the Marriott Marquis artfully frames the city in its ar
   </div>
 </div>
 
-</head>
+
 
 <script>
 var imgs = document.querySelectorAll("img");
@@ -358,3 +364,8 @@ map.on('style.load', function () {
 }
 
 </script>
+</body>
+
+<footer>
+<iframe width="50%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/54737211&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+</footer>

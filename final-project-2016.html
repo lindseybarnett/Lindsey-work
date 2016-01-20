@@ -59,7 +59,7 @@ body {
     left:50%;
     margin:210px auto;
     width:554px;
-    height:400px;
+    height:370px;
     font-family:verdana;
     font-size:13px;
     padding:25px;
@@ -188,7 +188,7 @@ footer {
     <div class="roof-top-popup hidden">
               <div class="cancel"></div>
                   <h2>620 Jones</h2>
-                        Hidden behind a pair of blue steel gates in the heart of the Tenderloin, this spacious indoor-outdoor bar has earned a loyal following for its landscaped, heated terrace and happy hour deals: $3 beer specials and $5 wine and cocktail specials. Though "roof deck" is a bit of a stretch-taller buildings surround you on three sides-the buzzy perch affords a birds-eye view of the Tenderloin below. The crowd is young and stylish, converging from Polk Street, FiDi, Mid-Market and SoMA, and the cocktails are carefully crafted (which sometimes leads to a wait at the bar). Try the Trendy Loin: coriander-infused gin, house-made lemongrass syrup, lime and sparkling wine garnished with fresh lemongrass.
+                        Ok, this spot is sweet. Do not get scared by the word "Tenderloin!" 620 Jones is hidden behind massive doors and is one of the most trendy, industrial, outdoor drinking venues in the  city. With heat lamps to help keep you warm, the open-aired venue provides lots of space that is also great for private parties or work events. They also have $3 beer specials and $5 wine and cocktail specials. Im not going to lie, the view isn't great (unless you like the look of the Loin), but the outdoor patio as spacious and fun. The crowd is trendy, young, and stylish.  The charcuterie plate and french fries are a great addition to any happy hour. The Brussels sprouts are also clutch. Small caveat: There can sometimes be a line to get in, if you go on the later side on a Friday or Saturday night.
                         <p><b>Address:</b> 620 Jones St San Francisco </p>
                         <p><b>Opening hours:</b> Tue-Thu 5pm-midnight, Fri-Sat 5pm-2am, Sun 11am-3pm</p>
       <div id="map-620jones"></div>
@@ -296,10 +296,10 @@ function roofTopLoad(event) {
   var correspondingPopup = imgThatWasClicked.nextElementSibling;
 //what is the div of the image that was clicked : ".roof-top")
 //targets the next sibling div to display (roof-top-popup)
-
+//remove "hidden" from the class to display the popup
   correspondingPopup.classList.remove('hidden');
 
-  // Show the map...
+  // Show the map
   mapboxgl.accessToken = 'pk.eyJ1IjoibGluZHNleXJiYXJuZXR0IiwiYSI6ImNpajNzMTd2MjAwMGp1ZGx2ejFueTN1bzkifQ.mmkydAUIBV87LX9Gvm9Cig';
   var map = new mapboxgl.Map({
       container: "map-" + correspondingRoofTop.id,

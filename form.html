@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <input id="check" type="checkbox" />
+    <input id="txt" type="text" value="unchecked" />
+
+
+      <script>
+      $('#check').change(function(){
+      var checkChange = this.checked ? 'checked' : 'unchecked';
+      $('#txt').val(checkChange);
+  });
+</script>
+
+  </body>
+</html>

@@ -3,17 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+.texting-lb{
+  font-size: 20px;
+}
+ .textbox {
+    border: 1px dotted #000000;
+    outline:0;
+    height:500px;
+    width: 1023px;
+    word-wrap: break-word;
+      word-break: break-word;
+      height: 80px;
+  }
+
+    </style>
   </head>
   <body>
+<input id="check" type="checkbox" /> Registration <p></p>
 
-    <input id="check" type="checkbox" />
-    <input id="txt" type="text" value="unchecked" />
+<p></p>
+<input id="convert" type="checkbox" /> Conversion <p></p>
+
+<input id="reg-yes" type="text" value="" class="textbox" />
+<input id="convert-yes" type="text" value="" class="textbox" />
 
 
-      <script>
+
+
+<!-- ******JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
       $('#check').change(function(){
-      var checkChange = this.checked ? 'checked' : 'unchecked';
-      $('#txt').val(checkChange);
+      var checkChange = this.checked ? 'The Extole register tag is used to track flow where there is an initial account created by the friend, but the actual conversion (purchase, account opening, etc) takes place at a later time. Registering allows Extole to properly track the first step of the friend funnel and tie it back to the advocate.' : '';
+      $('#reg-yes').val(checkChange);
+  });
+</script>
+
+<script>
+      $('#convert').change(function(){
+      var checkChange = this.checked ? 'The Extole register tag is used to track flow where there is an initial account created by the friend, but the actual conversion (purchase, account opening, etc) takes place at a later time. Registering allows Extole to properly track the first step of the friend funnel and tie it back to the advocate.' : '';
+      $('#convert-yes').val(checkChange);
   });
 </script>
 
